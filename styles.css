@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Adicionado transform à transição */
+    font-family: 'Courier New', Courier, monospace;
+
+    &:active {
+        transform: scale(0.95); /* Reduzindo o tamanho do botão */
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.hidden-section {
+    display: none;
+    background-color: rgb(57, 223, 7);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.main-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
